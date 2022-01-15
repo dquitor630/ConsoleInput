@@ -703,7 +703,7 @@ public class ConsoleInput {
 	public boolean readBooleanUsingInt(int affirmativeValue) {
 		boolean affirmative = false;
 		int in = 0;
-		in = keyboard.nextInt();
+		in = readInt();
 		cleanInput();
 		if (in == affirmativeValue) {
 			affirmative = true;
@@ -714,7 +714,7 @@ public class ConsoleInput {
 	public boolean readBooleanUsingInt() {
 		boolean affirmative = false;
 		int in = 0;
-		in = keyboard.nextInt();
+		in = readInt();
 		cleanInput();
 		if (in == 1) {
 			affirmative = true;
@@ -727,7 +727,7 @@ public class ConsoleInput {
 		int in = 0;
 		boolean exit = false;
 		do {
-			in = keyboard.nextInt();
+			in = readInt();
 			cleanInput();
 			if (in == affirmativeValue || in == negativeValue) {
 				exit = true;
